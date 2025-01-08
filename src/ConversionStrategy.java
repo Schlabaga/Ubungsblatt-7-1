@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
 public interface ConversionStrategy {
+
+    float convert(float value);
+
+    String getDescription();
 }

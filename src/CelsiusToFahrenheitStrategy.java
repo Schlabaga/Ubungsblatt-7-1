@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+public class CelsiusToFahrenheitStrategy implements ConversionStrategy {
 
-public class CelsiusToFahrenheitStrategy {
+    @Override
+    public float convert(float value){
+        return (value * 9/5) + 32;
+    }
+
+    @Override
+    public String getDescription(){
+        return "Celcius to Farenheit";
+    }
+
 }
